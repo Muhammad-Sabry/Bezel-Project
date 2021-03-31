@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  /* scroll-behavior: smooth; */
+}
+  /* Start Section #1 (Home) */
+.carousel-item {
+  height: 100vh;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+#Home .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#Home .caption h1 {
+  margin: 10px;
+  font-size: 5em;
+  font-weight: 900;
+  color: #fff;
+}
+#Home .caption h4 {
+  margin: 20px;
+  font-size: 1.3em;
+  color: #fff;
+}
+#Home .caption a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 15px 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 300ms;
+}
+#Home .caption a.more {
+  background-color: #00c3da;
+  text-transform: uppercase;
+}
+#Home .caption a.contact {
+  text-transform: uppercase;
+}
+#Home .caption a.contact:hover {
+  color: #000;
+  background-color: #fff;
+}
+  /* End Section #1 (Home) */
+
+  /* Start Section #2 (About) */
+#About {
+  height: 50vh;
+}
+.about {
+  font-size: 1.3em;
+}
+.about h6 {
+  text-transform: uppercase;
+}
+.about p {
+  color: #666;
+}
+.about a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.6em;
+  padding: 12px 30px;
+  border: 1px solid #aaa;
+  border-radius: 5%;
+  transition: all 200ms;
+}
+.about a:hover {
+  color: #fff;
+  background-color: #333;
+}
+#animate::after {
+  border-right: 2px solid #aaa;
+  box-sizing: border-box;
+  margin: -7px 0;
+  content: "";
+  color: #00c3da;
+  display: inline-block;
+  width: 0em;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+  animation: Tasks 7s infinite steps(7), Coriser 0.5s infinite steps(5);
+}
+@keyframes Tasks {
+  0% {content: ""; width: 0em}
+  1% {content: "websites"; width: 0em}
+  5% {content: "websites"; width: 4.6em}
+  28% {content: "websites"; width: 4.6em}
+  33% {content: "websites"; width: 0em}
+  34% {content: "softwares"; width: 0em}
+  38% {content: "softwares"; width: 5.4em}
+  61% {content: "softwares"; width: 5.4em}
+  66% {content: "softwares"; width: 0em}
+  67% {content: "apps"; width: 0em}
+  71% {content: "apps"; width: 3em}
+  94% {content: "apps"; width: 3em}
+  99% {content: "apps"; width: 0em}
+  100% {content: ""; width: 0em}
+}
+@keyframes Coriser {
+  from {border-right-color: #aaa}
+  to {border-right-color: transparent}
+}
+  /* End Section #2 (About) */
+  /* Start Section #3 (Mission) */
+#Our-Mission {
+  border-top: 0.5px solid #bbb;
+  border-button: 0.5px solid #bbb;
+}
+.mission {
+  width: 30%;
+}
+.mission .nav-link {
+  font-size: 0.9em;
+  color: #000;
+  transition: all 300ms;
+}
+.mission a.active {
+  border-bottom: 1px solid #000 !important;
+}
+.tab-pane, .nav-tabs, .nav-link{
+  border: none !important;
+}
+.tab-pane p {
+  margin: 20px 15px;
+  color: #555;
+}
+#Our-Mission .tab-pane a {
+  display: inline-block;
+  margin: 20px 25px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8em;
+  padding: 12px 30px;
+  border: 1px solid #aaa;
+  border-radius: 5%;
+  transition: all 200ms;
+}
+#Our-Mission .tab-pane a:hover {
+  color: #fff;
+  background-color: #333;
+}
+.image img {
+  width: 100%;
+}
+  /* End Section #3 (Mission) */
+  /* Start Section #4 (Team) */
+.team {
+  position: relative;
+  overflow: hidden;
+}
+.team:hover .caption {
+  top: 0;
+  opacity: 1;
+}
+.team .caption {
+  color: #fff;
+  background-color: rgba(0, 195, 218, 0.8);
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition: all 200ms;
+}
+.links a {
+  margin-right: 5px;
+}
+.summary h6 {
+  font-size: 0.9em;
+  font-weight: 700;
+}
+.summary p {
+  font-size: 0.9em;
+}
+  /* End Section #4 (Team) */
+
+  /* Start Section #5 (Services) */
+#Services {
+  background-image: url(images/asset48.jpeg);
+  background-size: 100% 150%;
+  background-position: center;
+  height: 90vh;
+}
+#Services .black {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.feature {
+  font-size: 2em;
+}
+.feature i {
+  line-height: 2.5em;
+}
+.our-feature h2 {
+  font-weight: 900;
+  font-size: 2.2em;
+  line-height: 2em;
+}
+.our-feature p {
+  font-size: 0.9em;
+}
+.our-feature li {
+  list-style: none;
+  font-size: 0.9em;
+  line-height: 2.5em;
+}
+.our-feature li::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f058";
+  margin-right: 10px;
+}
+  /* End Section #5 (Services) */
+
+  /* Start Section #6 (Works) */
+.title h2 {
+  font-weight: 700;
+  font-size: 2.1em;
+}
+.title hr {
+  border-top: 1px solid #000;
+  width: 2.5em;
+  transition: all 100ms;
+}
+.title:hover hr {
+  width: 3.5em;
+}
+#Works .nav-item {
+  margin: 30px 0;
+}
+#Works .nav-link {
+  font-size: 0.9em;
+  color: #000;
+  padding: 5px 15px;
+  transition: all 300ms;
+}
+#Works a.active {
+  border: 1px solid #00c3da !important;
+  border-radius: 30px;
+  color: #00c3da;
+}
+.item {
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  transition: all 1000ms;
+}
+.item .caption {
+  position: absolute;
+  top: 75%;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 25px 0;
+  opacity: 0;
+  transition: all 500ms;
+}
+.item:hover img {
+  transform: scale(1.2);
+}
+.item:hover .caption {
+  top: 65%;
+  opacity: 1;
+}
+  /* End Section #6 (Works) */
